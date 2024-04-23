@@ -7,7 +7,7 @@ const Footer = () => {
 				<small>Made by Valerio Casadei</small>
 			</span>
 			<span>
-				<small>Practicing API Fetch</small>
+				<small>Practicing API Fetches and Bootstrap in REACT</small>
 			</span>
 			<span>
 				<small>Hope you like it!</small>
