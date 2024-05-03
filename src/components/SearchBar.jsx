@@ -17,8 +17,8 @@ const SearchBar = () => {
 							</Form.Group>
 						</Form>
 					</Col>
-					<Col xs={12} className="">
-						<button className="py-2 px-4 bg-nav rounded text-light">Go!</button>
+					<Col xs={12}>
+						<button className="button py-2 px-4">Go!</button>
 					</Col>
 				</Row>
 			</Container>

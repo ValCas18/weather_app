@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 const NavBar = () => {
 	return (
 		<>
-			<Navbar expand="lg" className="bg-nav">
+			<Navbar expand="lg" className="bg-darkblue">
 				<Container className="d-flex justify-content-center">
 					<Navbar.Brand href="#home" className="fw-bold text-light">
 						<img src={logo} alt="logo meteo" width={50}></img>
