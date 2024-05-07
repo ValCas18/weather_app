@@ -4,22 +4,21 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Welcome from "./components/Welcome";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import WeatherCard from "./components/WeatherCard";
+import { Container } from "react-bootstrap";
 
 function App() {
 	return (
 		<>
-			<div className="App">
+			<Container className="App">
+				<NavBar />
 				<BrowserRouter>
-					<NavBar />
 					<Routes>
 						<Route path="/" element={<Welcome />} />
-						<Route path="/details/:city" element={<WeatherCard />} />
+						<Route></Route>
 					</Routes>
 				</BrowserRouter>
-				<WeatherCard />
 				<Footer />
-			</div>
+			</Container>
 		</>
 	);
 }
