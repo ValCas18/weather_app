@@ -1,15 +1,16 @@
 import { Container, Navbar /*Nav, NavDropdown */ } from "react-bootstrap";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 	return (
 		<>
 			<Navbar expand="lg" className="bg-darkblue">
-				<Container className="d-flex justify-content-center">
-					<Navbar.Brand href="#home" className="fw-bold text-light">
+				<Container className="d-flex justify-content-center g-2">
+					<Link to="/" className="d-flex gap-2 text-light align-items-center text-decoration-none">
 						<img src={logo} alt="logo meteo" width={50}></img>
-						WeatherCode
-					</Navbar.Brand>
+						<span>WeatherCode</span>
+					</Link>
 					{/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">

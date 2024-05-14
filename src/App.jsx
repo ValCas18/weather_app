@@ -10,15 +10,15 @@ function App() {
 	return (
 		<>
 			<div className="App">
-				<NavBar />
 				<BrowserRouter>
+					<NavBar />
 					<Routes>
 						<Route path="/" element={<Welcome />} />
 						<Route path="/weather/:city" element={<WeatherCard />} />
 					</Routes>
 				</BrowserRouter>
-				<Footer />
 			</div>
+			<Footer />
 		</>
 	);
 }
