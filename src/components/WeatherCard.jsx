@@ -5,31 +5,36 @@ import { useSelector } from "react-redux";
 
 const WeatherCard = () => {
 	const city = useSelector((state) => state.city);
+	const kelvinToCelsius = (kelvinTemp) => {
+		return Math.round(kelvinTemp - 273.15);
+	};
 	return (
 		<>
 			<SearchBar />
-			<Container className="mt-5">
+			<Container className="mt-1">
 				<div className="weatherCard">
-					<Row className="">
-						<Col xs={12} md={6} className="d-flex justify-content-center align-items-center">
-							<span className="fs-1">{city.weather.name}</span>
-						</Col>
+					<Row className="d-flex flex-column align-items-center">
 						<Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
 							<img
-								src={`http://openweathermap.org/img/wn/${city.weather.weather[0].icon}@2x.png`}
+								src={`http://openweathermap.org/img/wn/${city.weather.weather && city.weather.weather[0].icon}@2x.png`}
 								alt="weather icon"
+								width={200}
 							></img>
+						</Col>
+						<Col xs={12} md={6} className="d-flex justify-content-center align-items-center">
+							<span className="cityName">{city.weather.name}</span>
 						</Col>
 					</Row>
 					<Row className="cardSub">
 						<Col xs={12} md={4} className="d-flex justify-content-center align-items-center">
-							<span>Temp: {city.weather.main.temp}°C</span>
+							<span>Temp: {kelvinToCelsius(city.weather.main && city.weather.main.temp)}°C</span>
 						</Col>
 						<Col xs={12} md={4} className="d-flex flex-column justify-content-center">
-							<span>Min: {city.weather.main.temp_min}°C</span> <span>Max: {city.weather.main.temp_max}°C</span>
+							<span>Min: {kelvinToCelsius(city.weather.main && city.weather.main.temp_min)}°C</span>{" "}
+							<span>Max: {kelvinToCelsius(city.weather.main && city.weather.main.temp_max)}°C</span>
 						</Col>
 						<Col xs={12} md={4} className="d-flex justify-content-center align-items-center">
-							<span>Humidity: {city.weather.main.humidity}%</span>
+							<span>Humidity: {city.weather.main && city.weather.main.humidity}%</span>
 						</Col>
 					</Row>
 				</div>
