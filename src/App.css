@@ -11,13 +11,14 @@
 }
 
 body {
-	background: rgb(255, 255, 255);
-	background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 199, 214, 1) 50%, rgba(0, 69, 214, 1) 100%)
-		fixed;
+	background-image: url("./assets/Default_The_image_is_that_of_a_green_valley_full_of_trees_It_i_3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .bg-darkblue {
-	background-color: darkblue;
+	background: rgba(102, 122, 211, 1);
 }
 
 .footer {
@@ -33,13 +34,10 @@ body {
 .welcome {
 	font-weight: bold;
 	font-size: 8vw;
+	margin-top: 1.5em;
 }
 
 .welcome-text {
-	background-image: url("./assets/taylor-van-riper-yQorCngxzwI-unsplash.jpg");
-	background-size: cover;
-	background-clip: text;
-	color: transparent;
 }
 
 .subtext {
