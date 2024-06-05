@@ -38,11 +38,13 @@ body {
 }
 
 .welcome-text {
+	color: black;
 }
 
 .subtext {
 	color: black;
 	font-size: 3vw;
+	font-weight: bold;
 }
 
 .button {

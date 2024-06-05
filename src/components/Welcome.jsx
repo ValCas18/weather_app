@@ -8,7 +8,7 @@ const Welcome = () => {
 				<div className="welcome-text">
 					<h1 className="welcome">WeatherCode</h1>
 				</div>
-				<h2 className="subtext text-light m-0">The ultimate weather forecast app!</h2>
+				<h2 className="subtext m-0">The ultimate weather forecast app!</h2>
 				<SearchBar />
 			</div>
 		</>

@@ -27,14 +27,22 @@ const WeatherCard = () => {
 					</Row>
 					<Row className="cardSub">
 						<Col xs={12} md={4} className="d-flex justify-content-center align-items-center">
-							<span>Temp: {kelvinToCelsius(city.weather.main && city.weather.main.temp)}°C</span>
+							<span>
+								<strong>Temp:</strong> {kelvinToCelsius(city.weather.main && city.weather.main.temp)}°C
+							</span>
 						</Col>
 						<Col xs={12} md={4} className="d-flex flex-column justify-content-center">
-							<span>Min: {kelvinToCelsius(city.weather.main && city.weather.main.temp_min)}°C</span>{" "}
-							<span>Max: {kelvinToCelsius(city.weather.main && city.weather.main.temp_max)}°C</span>
+							<span>
+								<strong>Min:</strong> {kelvinToCelsius(city.weather.main && city.weather.main.temp_min)}°C
+							</span>{" "}
+							<span>
+								<strong>Max:</strong> {kelvinToCelsius(city.weather.main && city.weather.main.temp_max)}°C
+							</span>
 						</Col>
 						<Col xs={12} md={4} className="d-flex justify-content-center align-items-center">
-							<span>Humidity: {city.weather.main && city.weather.main.humidity}%</span>
+							<span>
+								<strong>Humidity:</strong> {city.weather.main && city.weather.main.humidity}%
+							</span>
 						</Col>
 					</Row>
 				</div>
