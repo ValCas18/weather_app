@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 	return (
 		<>
-			<Navbar expand="lg" className="bg-darkblue">
+			<Navbar expand="lg" className="bg-darkblue sticky-top">
 				<Container className="d-flex justify-content-center g-2">
 					<Link to="/" className="d-flex gap-2 text-light align-items-center text-decoration-none">
 						<img src={logo} alt="logo meteo" width={50}></img>
