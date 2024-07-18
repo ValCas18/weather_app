@@ -31,7 +31,7 @@ const SearchBar = () => {
 						</Form>
 					</Col>
 					<Col xs={12}>
-						<button className="button py-2 px-4" type="submit" onClick={handleSubmit}>
+						<button className="button py-2 px-4 font1" type="submit" onClick={handleSubmit}>
 							Go!
 						</button>
 					</Col>

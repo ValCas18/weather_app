@@ -6,7 +6,7 @@ const Welcome = () => {
 		<>
 			<div className="mt-5">
 				<div className="welcome-text">
-					<h1 className="welcome">WeatherCode</h1>
+					<h1 className="welcome font1">WeatherCode</h1>
 				</div>
 				<h2 className="subtext m-0">The ultimate weather forecast app!</h2>
 				<SearchBar />

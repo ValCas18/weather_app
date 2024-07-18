@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
 
 .App {
 	text-align: center;
@@ -13,8 +13,14 @@
 body {
 	background-image: url("./assets/Default_The_image_is_that_of_a_green_valley_full_of_trees_It_i_3.jpg");
 	background-size: cover;
-	background-position: top;
+	background-position: bottom;
 	background-repeat: no-repeat;
+}
+
+.font1 {
+	font-family: "Chelsea Market", system-ui;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .bg-darkblue {
@@ -34,13 +40,18 @@ body {
 .welcome {
 	font-weight: bold;
 	font-size: 8vw;
-	margin-top: 1.5em;
+	margin-top: 0.5em;
 }
 
 .welcome-text,
 .subtext {
-	background: rgb(2, 0, 36);
-	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(167, 16, 166, 1) 53%, rgba(0, 212, 255, 1) 100%);
+	background: rgb(245, 92, 122);
+	background: linear-gradient(
+		145deg,
+		rgba(245, 92, 122, 1) 30%,
+		rgba(246, 140, 112, 1) 50%,
+		rgba(246, 188, 102, 1) 70%
+	);
 	background-clip: text;
 	color: transparent;
 }

@@ -22,7 +22,7 @@ const WeatherCard = () => {
 							></img>
 						</Col>
 						<Col xs={12} md={6} className="d-flex justify-content-center align-items-center">
-							<span className="cityName">{city.weather.name}</span>
+							<span className="cityName font1">{city.weather.name}</span>
 						</Col>
 					</Row>
 					<Row className="cardSub">

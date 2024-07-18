@@ -11,7 +11,7 @@ function App() {
 		<>
 			<div className="App">
 				<BrowserRouter>
-					<NavBar />
+					{/* <NavBar /> */}
 					<Routes>
 						<Route path="/" element={<Welcome />} />
 						<Route path="/weather/:city" element={<WeatherCard />} />
