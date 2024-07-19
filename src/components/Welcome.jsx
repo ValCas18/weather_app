@@ -1,17 +1,14 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import Logo1 from "../assets/Logo2.png";
 
 const Welcome = () => {
 	return (
-		<>
-			<div className="mt-5">
-				<div className="welcome-text">
-					<h1 className="welcome font1">WeatherCode</h1>
-				</div>
-				<h2 className="subtext m-0">The ultimate weather forecast app!</h2>
-				<SearchBar />
-			</div>
-		</>
+		<div className="mt-5">
+			<img src={Logo1} alt="" className="logo1" />
+			<h1 className="font1">Welcome to WeatherCode!</h1>
+			<SearchBar />
+		</div>
 	);
 };
 
