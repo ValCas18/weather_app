@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import SearchBar from "./SearchBar";
 import { useSelector } from "react-redux";
+import Logo1 from "../assets/Logo2.png";
 
 const WeatherCard = () => {
 	const city = useSelector((state) => state.city);
@@ -10,8 +11,9 @@ const WeatherCard = () => {
 	};
 	return (
 		<>
-			<SearchBar />
-			<Container className="mt-1">
+			<Container className="mt-1 pb-5">
+				<img src={Logo1} alt="" className="logo1" />
+				<SearchBar />
 				<div className="weatherCard">
 					<Row className="d-flex flex-column align-items-center">
 						<Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
