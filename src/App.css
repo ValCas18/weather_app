@@ -64,7 +64,7 @@ body {
 }
 
 .button {
-	background-image: linear-gradient(to right, #da22ff 0%, #9733ee 51%, #da22ff 100%);
+	background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
 	margin: 10px;
 	padding: 15px 45px;
 	text-align: center;
@@ -74,11 +74,11 @@ body {
 	color: white;
 	box-shadow: 0 0 20px #eee;
 	border-radius: 10px;
-	border: 1px solid white;
+	display: block;
 }
 
 .button:hover {
-	background-position: right center;
+	background-position: right center; /* change the direction of the change here */
 	color: #fff;
 	text-decoration: none;
 }
@@ -113,5 +113,5 @@ body {
 }
 
 .logo1 {
-	width: 20em;
+	width: 30%;
 }

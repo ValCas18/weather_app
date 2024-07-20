@@ -30,7 +30,7 @@ const SearchBar = () => {
 							</Form.Group>
 						</Form>
 					</Col>
-					<Col xs={12}>
+					<Col xs={12} className="d-flex align-items-center justify-content-center">
 						<button className="button py-2 px-4 font1" type="submit" onClick={handleSubmit}>
 							Go!
 						</button>
