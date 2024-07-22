@@ -3,16 +3,21 @@ import { Col, Container, Row } from "react-bootstrap";
 import SearchBar from "./SearchBar";
 import { useSelector } from "react-redux";
 import Logo1 from "../assets/Logo2.png";
+import { useNavigate } from "react-router";
 
 const WeatherCard = () => {
 	const city = useSelector((state) => state.city);
 	const kelvinToCelsius = (kelvinTemp) => {
 		return Math.round(kelvinTemp - 273.15);
 	};
+	const navigate = useNavigate();
+	const goHome = () => {
+		navigate("/");
+	};
 	return (
 		<>
 			<Container className="mt-1 pb-5">
-				<img src={Logo1} alt="" className="logo1" />
+				<img src={Logo1} alt="" className="w-50" onClick={goHome} />
 				<SearchBar />
 				<div className="weatherCard">
 					<Row className="d-flex flex-column align-items-center">

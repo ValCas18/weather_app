@@ -16,9 +16,9 @@ const SearchBar = () => {
 
 	return (
 		<div>
-			<Container className="mt-5">
-				<Row className="d-flex flex-column align-items-center">
-					<Col xs={6}>
+			<Container>
+				<Row className="align-items-center justify-content-center">
+					<Col xs={12} md={7} className="pt-3">
 						<Form onSubmit={handleSubmit}>
 							<Form.Group className="mb-3">
 								<Form.Control
@@ -30,9 +30,9 @@ const SearchBar = () => {
 							</Form.Group>
 						</Form>
 					</Col>
-					<Col xs={12} className="d-flex align-items-center justify-content-center">
+					<Col xs={12} md={2} className="d-flex align-items-center justify-content-center justify-content-md-center">
 						<button className="button py-2 px-4 font1" type="submit" onClick={handleSubmit}>
-							Go!
+							Go
 						</button>
 					</Col>
 				</Row>

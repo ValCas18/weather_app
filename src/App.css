@@ -15,7 +15,7 @@
 body {
 	background-image: url("./assets/Default_The_background_should_be_a_stunning_highdefinition_nat_1.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .button:hover {
-	background-position: right center; /* change the direction of the change here */
+	background-position: right center;
 	color: #fff;
 	text-decoration: none;
 }
@@ -93,8 +93,9 @@ body {
 	gap: 1em;
 	border: 1px solid rgba(255, 255, 255, 0);
 	border-radius: 10%;
-	box-shadow: 0px 0px 3em 1.5em #a022e9;
+	box-shadow: 0px 0px 3em 0.3em #ffffff;
 	background-color: rgb(140, 143, 143, 0.5);
+	margin-top: 3em;
 }
 
 .cityName {
@@ -103,15 +104,11 @@ body {
 }
 
 .cardSub {
-	font-size: 3vmax;
+	font-size: 1.7em;
 }
 
 @media screen and (max-width: 767px) {
 	.cardSub {
 		row-gap: 1em;
 	}
-}
-
-.logo1 {
-	width: 30%;
 }
