@@ -1,4 +1,4 @@
-import { GET_WEATHER, SET_QUERY } from "../actions";
+import { GET_WEATHER, RESET_STATE, SET_QUERY } from "../actions";
 
 const initialState = {
 	query: "",
@@ -17,6 +17,8 @@ export const weatherReducer = (state = initialState, action) => {
 				...state,
 				weather: action.payload,
 			};
+		case RESET_STATE:
+			return initialState;
 		default:
 			return state;
 	}

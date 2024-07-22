@@ -8,15 +8,9 @@
 	min-height: 100dvh;
 	overflow: hidden;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-}
-
-body {
-	background-image: url("./assets/Default_The_background_should_be_a_stunning_highdefinition_nat_1.jpg");
-	background-size: cover;
-	background-position: top;
-	background-repeat: no-repeat;
+	justify-content: space-between;
 }
 
 .font1 {
@@ -31,11 +25,15 @@ body {
 
 .footer {
 	color: white;
-	padding-block: 1em;
+	padding-block: 0.8em;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
 	align-items: center;
+	background: #ffffff1a;
+	border: 1px solid #ffffff20;
+	backdrop-filter: blur(0.3em) saturate(120%);
+	width: 100%;
 }
 
 .welcome {
@@ -92,14 +90,14 @@ body {
 	flex-direction: column;
 	gap: 1em;
 	border: 1px solid rgba(255, 255, 255, 0);
-	border-radius: 10%;
+	border-radius: 60px;
 	box-shadow: 0px 0px 3em 0.3em #ffffff;
 	background-color: rgb(140, 143, 143, 0.5);
 	margin-top: 3em;
 }
 
 .cityName {
-	font-size: 5vmax;
+	font-size: 2.5em;
 	font-weight: 700;
 }
 
@@ -111,4 +109,36 @@ body {
 	.cardSub {
 		row-gap: 1em;
 	}
+}
+
+.bg-sun {
+	background-image: url(./assets/Sun.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.bg-snow {
+	background-image: url(./assets/Snow.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.bg-cloud {
+	background-image: url(./assets/Cloud.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.bg-rain {
+	background-image: url(./assets/Rain.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.logo1 {
+	cursor: pointer;
 }

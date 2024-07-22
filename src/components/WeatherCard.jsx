@@ -1,11 +1,13 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import SearchBar from "./SearchBar";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Logo1 from "../assets/Logo2.png";
 import { useNavigate } from "react-router";
+import { resetState } from "../redux/actions";
 
 const WeatherCard = () => {
+	const dispatch = useDispatch();
 	const city = useSelector((state) => state.city);
 	const kelvinToCelsius = (kelvinTemp) => {
 		return Math.round(kelvinTemp - 273.15);
@@ -13,11 +15,12 @@ const WeatherCard = () => {
 	const navigate = useNavigate();
 	const goHome = () => {
 		navigate("/");
+		dispatch(resetState());
 	};
 	return (
 		<>
 			<Container className="mt-1 pb-5">
-				<img src={Logo1} alt="" className="w-50" onClick={goHome} />
+				<img src={Logo1} alt="" className="w-25 logo1" onClick={goHome} />
 				<SearchBar />
 				<div className="weatherCard">
 					<Row className="d-flex flex-column align-items-center">
@@ -48,7 +51,7 @@ const WeatherCard = () => {
 						</Col>
 						<Col xs={12} md={4} className="d-flex justify-content-center align-items-center">
 							<span>
-								<strong>Humidity:</strong> {city.weather.main && city.weather.main.humidity}%
+								<strong>Hum:</strong> {city.weather.main && city.weather.main.humidity}%
 							</span>
 						</Col>
 					</Row>

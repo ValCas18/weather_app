@@ -18,7 +18,7 @@ const SearchBar = () => {
 		<div>
 			<Container>
 				<Row className="align-items-center justify-content-center">
-					<Col xs={12} md={7} className="pt-3">
+					<Col xs={10} md={7} className="pt-3">
 						<Form onSubmit={handleSubmit}>
 							<Form.Group className="mb-3">
 								<Form.Control

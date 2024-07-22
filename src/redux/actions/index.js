@@ -2,8 +2,15 @@ export const SET_QUERY = "SET_QUERY";
 
 export const GET_WEATHER = "GET_WEATHER";
 
+export const RESET_STATE = "RESET_STATE";
+
 export const setQuery = (payload) => ({
 	type: SET_QUERY,
+	payload,
+});
+
+export const resetState = (payload) => ({
+	type: RESET_STATE,
 	payload,
 });
 
