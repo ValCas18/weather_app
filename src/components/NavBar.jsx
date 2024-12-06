@@ -8,7 +8,7 @@ const NavBar = () => {
 			<Navbar expand="lg" className="bg-darkblue sticky-top">
 				<Container className="d-flex justify-content-center g-2">
 					<Link to="/" className="d-flex gap-2 text-light align-items-center text-decoration-none">
-						<img src={logo} alt="logo meteo" width={50}></img>
+						<img src={logo} alt="logo meteo" width={51}></img>
 						<span>WeatherCode</span>
 					</Link>
 					{/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
